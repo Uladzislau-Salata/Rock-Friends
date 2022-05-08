@@ -31,7 +31,7 @@ function Header() {
               </li>
 
               <li>
-                <a href="" id="Menu">
+                <a href="##" id="Menu">
                   Menu
                 </a>
               </li>
@@ -42,7 +42,7 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a href="" id="Kontakt">
+                <a href="##" id="Kontakt">
                   Kontakt
                 </a>
               </li>
