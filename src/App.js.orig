@@ -1,18 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+<<<<<<< HEAD
+import "./App.css";
 import Menu from "./Menu/Menu";
+=======
 import React from "react";
 import Galeria from "./Galeria/Galeria";
 import Header from "./Header/Header";
+>>>>>>> origin/main
 
 function App() {
   return (
     <div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+<<<<<<< HEAD
       <Menu />
+=======
       <Header />
       <Galeria />
+>>>>>>> origin/main
     </div>
   );
 }
