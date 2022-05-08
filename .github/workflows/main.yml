@@ -1,0 +1,27 @@
+name: Развертывание сайта
+
+on: push
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout # берем ветку main
+        uses: actions/checkout@v2
+      -
+        name: Install node modules # устанавливаем node модули из package.json
+        run: npm i
+      -
+        name: Build GH Pages # запускаем скрипт build из package.json
+        run: npm run build
+      -
+        name: Deploy to GitHub Pages # развертываем сайт с помощью скрипта
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v2
+        with:
+          target_branch: gh-pages
+          build_dir: build
+          keep_history: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
