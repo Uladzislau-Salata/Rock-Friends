@@ -1,17 +1,21 @@
-import React from "react";
+<<<<<<< HEAD
 import "./App.css";
-import Header from "./Header/Header";
 import Menu from "./Menu/Menu";
+=======
+import React from "react";
 import Galeria from "./Galeria/Galeria";
-import Kontact from "./Kontact/Kontact";
+import Header from "./Header/Header";
+>>>>>>> origin/main
 
 function App() {
   return (
     <div>
-      <Header />
+<<<<<<< HEAD
       <Menu />
+=======
+      <Header />
       <Galeria />
-      <Kontact/>
+>>>>>>> origin/main
     </div>
   );
 }

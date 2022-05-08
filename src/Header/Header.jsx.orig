@@ -31,7 +31,11 @@ function Header() {
               </li>
 
               <li>
+<<<<<<< HEAD
                 <a href="#menu" id="Menu">
+=======
+                <a href="##" id="Menu">
+>>>>>>> origin/main
                   Menu
                 </a>
               </li>
@@ -42,7 +46,11 @@ function Header() {
                 </a>
               </li>
               <li>
+<<<<<<< HEAD
                 <a href="#kontact" id="Kontakt">
+=======
+                <a href="##" id="Kontakt">
+>>>>>>> origin/main
                   Kontakt
                 </a>
               </li>
