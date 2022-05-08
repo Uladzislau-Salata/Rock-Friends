@@ -1,12 +1,6 @@
 import "./Header.css";
 
 function Header() {
-  /* window.onscroll = function showHeader(){
-
-    if(window.pageYOffset > 200){
-
-    }
-  }*/
 
   document.onscroll = function () {
     let scroll = window.scrollY;
