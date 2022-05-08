@@ -1,6 +1,17 @@
 import "./Header.css";
 
 function Header() {
+
+  document.onscroll = function () {
+    let scroll = window.scrollY;
+    var header = document.querySelector(".showing");
+    if (scroll > 0) {
+      header.classList.add("header_back");
+    } else {
+      header.classList.remove("header_back");
+    }
+  };
+
   return (
     <header id="header">
       <div className="header">
@@ -14,7 +25,7 @@ function Header() {
               </li>
 
               <li>
-                <a href="##" id="Menu">
+                <a href="#menu" id="Menu">
                   Menu
                 </a>
               </li>
@@ -25,7 +36,7 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a href="##" id="Kontakt">
+                <a href="#kontact" id="Kontakt">
                   Kontakt
                 </a>
               </li>
