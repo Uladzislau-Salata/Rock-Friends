@@ -1,6 +1,23 @@
 import "./Header.css";
 
 function Header() {
+  /* window.onscroll = function showHeader(){
+    
+    if(window.pageYOffset > 200){
+      
+    }
+  }*/
+
+  document.onscroll = function () {
+    let scroll = window.scrollY;
+    var header = document.querySelector(".showing");
+    if (scroll > 0) {
+      header.classList.add("header_back");
+    } else {
+      header.classList.remove("header_back");
+    }
+  };
+
   return (
     <header id="header">
       <div className="header">
