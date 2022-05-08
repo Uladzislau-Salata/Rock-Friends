@@ -1,9 +1,6 @@
 import "./Galeria.css";
 
 function Galeria() {
-    
-
-    
   const allPicturesName = [
     "1.jpg",
     "2.jpg",
@@ -21,10 +18,10 @@ function Galeria() {
     "14.jpg",
   ];
 
-   //  console.log(_allPictures)
+  //  console.log(_allPictures)
 
   const Pictures = allPicturesName.map(function (name) {
-    let _name =  "/assets/Galeria-foto/" + name;
+    let _name = "/assets/Galeria-foto/" + name;
     return (
       <div className="grid-box">
         <a href={_name} data-lightbox="galeria">

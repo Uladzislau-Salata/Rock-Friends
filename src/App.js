@@ -1,18 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import Menu from "./Menu/Menu";
 import React from "react";
-import Galeria from "./Galeria/Galeria";
+import "./App.css";
 import Header from "./Header/Header";
+import Menu from "./Menu/Menu";
+import Galeria from "./Galeria/Galeria";
+import Kontact from "./Kontact/Kontact";
 
 function App() {
   return (
     <div>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      <Menu />
       <Header />
+      <Menu />
       <Galeria />
+      <Kontact/>
     </div>
   );
 }

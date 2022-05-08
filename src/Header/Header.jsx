@@ -2,9 +2,9 @@ import "./Header.css";
 
 function Header() {
   /* window.onscroll = function showHeader(){
-    
+
     if(window.pageYOffset > 200){
-      
+
     }
   }*/
 
@@ -31,7 +31,7 @@ function Header() {
               </li>
 
               <li>
-                <a href="" id="Menu">
+                <a href="#menu" id="Menu">
                   Menu
                 </a>
               </li>
@@ -42,7 +42,7 @@ function Header() {
                 </a>
               </li>
               <li>
-                <a href="" id="Kontakt">
+                <a href="#kontact" id="Kontakt">
                   Kontakt
                 </a>
               </li>
