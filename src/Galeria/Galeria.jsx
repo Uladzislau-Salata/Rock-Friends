@@ -21,17 +21,14 @@ function Galeria() {
     "14.jpg",
   ];
 
-  const _allPictures = allPicturesName.map(
-    (_name) => "/assets/Galeria-foto/" + _name
-  );
+   //  console.log(_allPictures)
 
-  //  console.log(_allPictures)
-
-  const Pictures = _allPictures.map(function (name) {
+  const Pictures = allPicturesName.map(function (name) {
+    let _name =  "/assets/Galeria-foto/" + name;
     return (
       <div className="grid-box">
-        <a href={name} data-lightbox="galeria">
-          <img src={name} alt="" />
+        <a href={_name} data-lightbox="galeria">
+          <img src={_name} alt="" />
         </a>
       </div>
     );
