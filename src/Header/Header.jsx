@@ -15,14 +15,15 @@ function Header() {
 
   const openBlock = () => {
     let openHeader = document.querySelector(".showing");
-    //console.log('dfgdf');
-   
-    if(openHeader.className.includes('open')){
+    
+   return openHeader.classList.toggle("open");
+
+    /*if(openHeader.className.includes('open')){
       return openHeader.classList.remove("open");
     }else{
       return openHeader.classList.add("open");
     }
-    
+    */
   }
 
   return (
