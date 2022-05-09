@@ -15,15 +15,17 @@ function Galeria() {
     "11.jpg",
     "12.jpg",
     "13.jpg",
-    "14.jpg",
+    "14.jpg"
   ];
 
-  //  console.log(_allPictures)
+  //console.log(icons);
 
   const Pictures = allPicturesName.map(function (name) {
     let _name = "/assets/Galeria-foto/" + name;
+    console.log(_name);
     return (
       <div className="grid-box">
+        
         <a href={_name} data-lightbox="galeria">
           <img src={_name} alt="" />
         </a>
