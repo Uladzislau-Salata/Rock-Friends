@@ -5,7 +5,7 @@ import { grey } from "@mui/material/colors";
 function Header() {
   document.onscroll = function () {
     let scroll = window.scrollY;
-    var header = document.querySelector(".showing");
+    let header = document.querySelector(".showing");
     if (scroll > 0) {
       header.classList.add("header_back");
     } else {
@@ -13,8 +13,8 @@ function Header() {
     }
   };
 
-  function openBlock() {
-    var openHeader = document.querySelector(".showing");
+  const openBlock = () => {
+    let openHeader = document.querySelector(".showing");
     //console.log('dfgdf');
    
     if(openHeader.className.includes('open')){
