@@ -1,7 +1,8 @@
 import "./Header.css";
+import MenuIcon from "@mui/icons-material/Menu";
+import { grey } from "@mui/material/colors";
 
 function Header() {
-
   document.onscroll = function () {
     let scroll = window.scrollY;
     var header = document.querySelector(".showing");
@@ -12,11 +13,30 @@ function Header() {
     }
   };
 
+  function openBlock() {
+    var openHeader = document.querySelector(".showing");
+    //console.log('dfgdf');
+   
+    if(openHeader.className.includes('open')){
+      return openHeader.classList.remove("open");
+    }else{
+      return openHeader.classList.add("open");
+    }
+    
+  }
+
   return (
     <header id="header">
       <div className="header">
         <nav>
-          <div className="menu">
+          <div className="menu-icon">
+            <MenuIcon
+              onClick={openBlock}
+              fontSize="large"
+              sx={{ color: grey[50] }}
+            />
+          </div>
+          <div>
             <ul className="showing">
               <li>
                 <a href="#header" id="Rock_Friends">

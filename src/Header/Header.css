@@ -6,26 +6,19 @@
   box-shadow: 0px 5px 19px 4px rgb(0 0 0 / 40%);
 }
 
-nav {
+.header nav {
   position: fixed;
   width: 100%;
   margin-top: 30px;
   box-sizing: border-box;
   z-index: 1000;
   font-family: "Roboto", sans-serif;
-  
 }
 
-div {
-  display: block;
-}
-
-ul {
+.showing {
   list-style: none;
   background: rgba(0, 0, 0, 0);
-
   overflow: hidden;
-
   padding: 0;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -33,13 +26,13 @@ ul {
   transition: 0.2s;
 }
 
-li {
+.showing li {
   display: inline-block;
   padding: 15px 20px;
   transition: 0.3s;
 }
 
-a {
+.showing a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
@@ -54,7 +47,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
-h2 {
+.inner h2 {
   font-family: "Anton", sans-serif;
   text-align: center;
   border-top: 2px solid #ecf0f2;
@@ -69,11 +62,11 @@ h2 {
   text-transform: uppercase;
 }
 
-strong {
+.inner strong {
   font-weight: bold;
 }
 
-p {
+.inner p {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -82,8 +75,41 @@ p {
   line-height: 15px;
 }
 
-.header_back{
+.header_back {
   background: rgba(0, 0, 0, 0.8);
 }
 
+.menu-icon {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 5px 2%;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
 
+@media (max-width: 580px) {
+  .menu-icon {
+    display: block;
+  }
+  #header .inner h2 {
+    font-size: 30px;
+  }
+  #header .inner p {
+    font-size: 12px;
+  }
+
+  .showing {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .showing li {
+    display: none; 
+  } 
+  .open li {
+    display: block;
+  }
+  
+}
