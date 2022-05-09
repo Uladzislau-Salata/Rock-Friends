@@ -1,0 +1,119 @@
+#header {
+  width: 100%;
+  height: 100vh;
+  background: url(../../public/assets/gitara-hero.jpg) fixed no-repeat 50% 50%;
+  background-size: cover;
+  box-shadow: 0px 5px 19px 4px rgb(0 0 0 / 40%);
+}
+
+.header nav {
+  position: fixed;
+  width: 100%;
+  margin-top: 30px;
+  box-sizing: border-box;
+  z-index: 1000;
+  font-family: "Roboto", sans-serif;
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
+}
+
+.showing {
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  transition: 0.2s;
+}
+
+.showing li {
+  display: inline-block;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+.showing a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.inner {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inner h2 {
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  border-top: 2px solid #ecf0f2;
+  border-bottom: 2px solid #ecf0f2;
+  color: #ecf0f2;
+  font-size: 62px;
+  padding: 10px;
+  font-weight: 800;
+  letter-spacing: 0.225em;
+  line-height: 1em;
+  margin: 0 0 0 0;
+  text-transform: uppercase;
+}
+
+.inner strong {
+  font-weight: bold;
+}
+
+.inner p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #ecf0f2;
+  letter-spacing: 2px;
+  line-height: 15px;
+}
+
+.header_back {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.menu-icon {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: right;
+  box-sizing: border-box;
+  padding: 5px 2%;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media (max-width: 580px) {
+  .menu-icon {
+    display: block;
+  }
+  #header .inner h2 {
+    font-size: 30px;
+  }
+  #header .inner p {
+    font-size: 12px;
+  }
+
+  .showing {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  .showing li {
+    display: none; 
+  } 
+  .open li {
+    display: block;
+  }
+  
+}
