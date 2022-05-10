@@ -2,21 +2,30 @@ import "./Header.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { grey } from "@mui/material/colors";
 
+
+
+
 function Header() {
+  let header;
   document.onscroll = function () {
+    if(!header){
+      header = document.querySelector(".showing");
+    }
+
     let scroll = window.scrollY;
-    let header = document.querySelector(".showing");
+   
     if (scroll > 0) {
       header.classList.add("header_back");
     } else {
       header.classList.remove("header_back");
     }
   };
+  let header1 = document.querySelector(".showing");
 
   const openBlock = () => {
-    let openHeader = document.querySelector(".showing");
     
-   return openHeader.classList.toggle("open");
+    
+   return header1.classList.toggle("open");
 
     /*if(openHeader.className.includes('open')){
       return openHeader.classList.remove("open");
