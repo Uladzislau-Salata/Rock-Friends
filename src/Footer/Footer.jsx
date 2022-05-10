@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import ContactPageIcon from "@mui/icons-material/ContactPage";
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 function Footer() {
   return (
@@ -9,7 +9,7 @@ function Footer() {
         <p>Rock Friends 2022 &#169; Create by M5.it </p>
         <p>
           <a href="https://www.facebook.com/rock.friends.warszawa/">
-            <ContactPageIcon color="primary"></ContactPageIcon>
+            <FacebookIcon color="primary"></FacebookIcon>
           </a>
         </p>
       </div>
