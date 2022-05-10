@@ -1,8 +1,38 @@
-.title {
-  font-size: 54px;
-  color: yellow;
+.menu-title {
+  font-size: 56px;
+  color: #222;
 }
 
 #menu {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 100%;
+  box-shadow: 0px 5px 19px 4px rgb(0 0 0 / 40%);
+  background-color: #d9d8d8;
+  z-index: -1000;
+}
+
+.title hr {
+  width: 200px;
+  border-color: #ccc;
+}
+
+.menu-title h1 {
+  font-size: 24px;
+  color: #000;
+}
+
+.menu-center .drinks {
+  float: left;
+  width: 50%;
+  border-right: 1px solid #222;
+}
+
+.menu-center .drinks .whisky_left,
+.menu-center .drinks .whisk_right {
+  float: left;
+  width: 50%;
+  margin: 0;
+  border-right: 1px solid #222;
 }
