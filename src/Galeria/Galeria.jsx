@@ -1,33 +1,17 @@
 import "./Galeria.css";
 
 function Galeria() {
-  const allPicturesName = [
-    "1.jpg",
-    "2.jpg",
-    "3.jpg",
-    "4.jpg",
-    "5.jpg",
-    "6.jpg",
-    "7.jpg",
-    "8.jpg",
-    "9.jpg",
-    "10.jpg",
-    "11.jpg",
-    "12.jpg",
-    "13.jpg",
-    "14.jpg"
-  ];
-
-  //console.log(icons);
-
-  const Pictures = allPicturesName.map(function (name) {
-    let _name = "/assets/Galeria-foto/" + name;
-    console.log(_name);
+  let roadToPicture = [];
+  for (let i = 1; i <= 14; i++) {
+    roadToPicture.push(
+      process.env.PUBLIC_URL + "/assets/Galeria-foto/" + i + ".jpg");
+  }
+  console.log(roadToPicture);
+  const Pictures = roadToPicture.map(function (name, index) {
     return (
-      <div className="grid-box">
-        
-        <a href={_name} data-lightbox="galeria">
-          <img src={_name} alt="" />
+      <div key={index} className="grid-box">
+        <a href={name} data-lightbox="galeria">
+          <img src={name} alt="" />
         </a>
       </div>
     );
