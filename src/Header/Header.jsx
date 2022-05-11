@@ -9,9 +9,9 @@ function Header() {
   let header;
   document.onscroll = function () {
     if(!header){
+      
       header = document.querySelector(".showing");
     }
-
     let scroll = window.scrollY;
    
     if (scroll > 0) {
@@ -20,12 +20,15 @@ function Header() {
       header.classList.remove("header_back");
     }
   };
-  let header1 = document.querySelector(".showing");
-
+  
   const openBlock = () => {
+    console.log(header);
+
+    if(!header){
+      header = document.querySelector(".showing");
+    }
     
-    
-   return header1.classList.toggle("open");
+   return header.classList.toggle("open");
 
     /*if(openHeader.className.includes('open')){
       return openHeader.classList.remove("open");
