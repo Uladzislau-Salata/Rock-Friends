@@ -48,3 +48,11 @@ img {
 img:hover {
   filter: grayscale(0);
 }
+
+@media (max-width: 1219px) {
+  #galeria .picture-grid {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+

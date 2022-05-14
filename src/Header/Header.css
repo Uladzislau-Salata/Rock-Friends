@@ -106,11 +106,9 @@
   }
 
   .showing li {
-    display: none; 
-  } 
+    display: none;
+  }
   .open li {
     display: block;
   }
-  
 }
-

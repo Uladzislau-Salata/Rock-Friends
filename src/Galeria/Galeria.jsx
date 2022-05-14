@@ -1,12 +1,14 @@
 import "./Galeria.css";
+import { Carousel } from "./carousel/Carousel";
 
 function Galeria() {
   let roadToPicture = [];
   for (let i = 1; i <= 14; i++) {
     roadToPicture.push(
-      process.env.PUBLIC_URL + "/assets/Galeria-foto/" + i + ".jpg");
+      process.env.PUBLIC_URL + "/assets/Galeria-foto/" + i + ".jpg"
+    );
   }
-  console.log(roadToPicture);
+
   const Pictures = roadToPicture.map(function (name, index) {
     return (
       <div key={index} className="grid-box">
@@ -27,6 +29,12 @@ function Galeria() {
         </div>
         <div className="picture-grid">{Pictures}</div>
       </div>
+      <Carousel>
+        {Pictures}
+          
+          
+        
+      </Carousel>
     </section>
   );
 }
