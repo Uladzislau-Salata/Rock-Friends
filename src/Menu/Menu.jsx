@@ -7,12 +7,13 @@ function Menu() {
       <div id="container">
         <div className="menu-title">
           <strong>01</strong>
-          <h1 className="heading">NASZE MENU</h1>
+          <h1 className="heading">НАШЕ МЕНЮ</h1>
           <hr />
         </div>
         <div className="menu-center">
           <div className="drinks">
-            <div>
+            <p>
+              <br />
               <b>Бочковое Пиво</b>
               <br />
               Tyskie Classic 6/8 зл.
@@ -29,24 +30,29 @@ function Menu() {
               <br />
               <b>Виски</b>
               <br />
+            </p>
+            <div className="whisky">
               <div className="whisky_left">
-                <div>
+                <p>
                   Ballantine’s Finest 10 зл.
                   <br />
                   Ballantine’s Hard Fired 10 зл.
                   <br />
                   Ballantine’s 12 лет 16 зл.
-                </div>
+                </p>
               </div>
               <div className="whisky_right">
-                <div>
+                <p>
                   Glenlivet 12 лет 24 зл.
                   <br />
                   Glenfiddich 12 лет 24 зл.
                   <br />
                   Lagavulin 16 лет 30 зл.
-                </div>
+                </p>
               </div>
+            </div>
+            <p>
+              <br />
               <b>По четвергам Ballantine's 8 зл.</b>
               <br />
               <br />
@@ -63,10 +69,10 @@ function Menu() {
               <br />
               <br />
               <b>Дегустация (пн-чт) 5 шотов / 20 зл.</b>
-            </div>
+            </p>
           </div>
           <div className="foods">
-            <div>
+            <p>
               <br />
               <b>Горячие багеты 10 зл.</b>
               <br />
@@ -87,20 +93,21 @@ function Menu() {
               <br />
               <br />
               <b>Сало домашнее 10 зл.</b>
-              <br/>
-              <br/>
+              <br />
+              <br />
               <b>Сельдь 10 зл.</b>
-              <br/>
-              <br/>
+              <br />
+              <br />
               <b>Начос + сальса 9 зл.</b>
-              <br/>
-              <br/>
+              <br />
+              <br />
               Чипсы | Арахис | Хлебные палочки / 5 зл.
-              <br/>
-              <br/>
+              <br />
+              <br />
               <b>Мы предлагаем специальное меню для групповых заказов</b>
-            </div>
+            </p>
           </div>
+          <div className="clear"></div>
         </div>
       </div>
     </section>
