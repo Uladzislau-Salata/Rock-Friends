@@ -1,18 +1,25 @@
-.menu-title {
-  font-size: 56px;
-  color: #222;
-}
-
 #menu {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 30px;
   width: 100%;
+  position: relative;
   box-shadow: 0px 5px 19px 4px rgb(0 0 0 / 40%);
   background-color: #d9d8d8;
   z-index: -1000;
 }
 
+#menu div {
+  display: block;
+}
+
+.menu-title {
+  padding-bottom: 22px;
+}
+.menu-title strong {
+  font-size: 56px;
+  color: #222;
+}
 .title hr {
   width: 200px;
   border-color: #ccc;
@@ -23,16 +30,40 @@
   color: #000;
 }
 
-.menu-center .drinks {
+#menu .drinks {
   float: left;
   width: 50%;
+  margin: -1px;
   border-right: 1px solid #222;
+  margin-bottom: 20px;
 }
 
-.menu-center .drinks .whisky_left,
+#menu .whisky {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* .menu-center .drinks .whisky_left,
 .menu-center .drinks .whisk_right {
   float: left;
   width: 50%;
-  margin: 0;
+  margin: -1px;
   border-right: 1px solid #222;
+  margin-bottom: 20px;
+} */
+
+#menu .drinks p,
+.foods p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+#menu .foods {
+  float: left;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.clear {
+  clear: both;
 }
