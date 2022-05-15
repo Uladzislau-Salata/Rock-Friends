@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Rock-Friends/static/css/main.62d24720.css",
-    "main.js": "/Rock-Friends/static/js/main.75bb162e.js",
+    "main.css": "/Rock-Friends/static/css/main.d437de78.css",
+    "main.js": "/Rock-Friends/static/js/main.fe5903ca.js",
     "static/js/787.18dd0c54.chunk.js": "/Rock-Friends/static/js/787.18dd0c54.chunk.js",
     "static/media/gitara-hero.jpg": "/Rock-Friends/static/media/gitara-hero.8aa2dcbd1d7873b0afaf.jpg",
     "index.html": "/Rock-Friends/index.html",
-    "main.62d24720.css.map": "/Rock-Friends/static/css/main.62d24720.css.map",
-    "main.75bb162e.js.map": "/Rock-Friends/static/js/main.75bb162e.js.map",
+    "main.d437de78.css.map": "/Rock-Friends/static/css/main.d437de78.css.map",
+    "main.fe5903ca.js.map": "/Rock-Friends/static/js/main.fe5903ca.js.map",
     "787.18dd0c54.chunk.js.map": "/Rock-Friends/static/js/787.18dd0c54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62d24720.css",
-    "static/js/main.75bb162e.js"
+    "static/css/main.d437de78.css",
+    "static/js/main.fe5903ca.js"
   ]
 }
