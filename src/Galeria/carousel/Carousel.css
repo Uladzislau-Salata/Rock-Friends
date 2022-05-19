@@ -9,19 +9,13 @@
 .window {
   height: 100%;
   width: 100%;
-  overflow: scroll;
+  
 }
 
-.all-pages-container {
-  height: 100%;
-  display: flex;
+.window img{
+  filter: grayscale(0);
 
-  transition: translate;
-  transition-property: transform;
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
 }
-
 .arrow {
   cursor: pointer;
 }

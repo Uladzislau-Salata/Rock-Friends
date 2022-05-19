@@ -18,7 +18,7 @@ function Header() {
   };
 
   const openBlock = () => {
-    console.log(header);
+    
 
     if (!header) {
       header = document.querySelector(".showing");
