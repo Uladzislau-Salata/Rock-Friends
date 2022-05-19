@@ -1,0 +1,21 @@
+.main-container {
+  height: 100%;
+  width: 450px;
+
+  display: flex;
+  align-items: center;
+}
+
+.window {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.window img{
+  filter: grayscale(0);
+
+}
+.arrow {
+  cursor: pointer;
+}

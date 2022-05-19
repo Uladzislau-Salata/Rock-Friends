@@ -1,18 +1,27 @@
 import "./Galeria.css";
+import { Carousel } from "./carousel/Carousel";
+import { useState } from "react";
 
 function Galeria() {
+  const [indexClickedImg, setIndexClickedImg] = useState(4);
+
   let roadToPicture = [];
   for (let i = 1; i <= 14; i++) {
     roadToPicture.push(
-      process.env.PUBLIC_URL + "/assets/Galeria-foto/" + i + ".jpg");
+      process.env.PUBLIC_URL + "/assets/Galeria-foto/" + i + ".jpg"
+    );
   }
-  console.log(roadToPicture);
+
   const Pictures = roadToPicture.map(function (name, index) {
     return (
       <div key={index} className="grid-box">
-        <a href={name} data-lightbox="galeria">
-          <img src={name} alt="" />
-        </a>
+        <img
+          onClick={() => {
+            setIndexClickedImg(index);
+          }}
+          src={name}
+          alt=""
+        />
       </div>
     );
   });
@@ -26,6 +35,11 @@ function Galeria() {
           <hr />
         </div>
         <div className="picture-grid">{Pictures}</div>
+      </div>
+      <div className="carousel-background">
+        <div className="carousel">
+          <Carousel roadToImg={roadToPicture} indexImg={indexClickedImg} />
+        </div>
       </div>
     </section>
   );

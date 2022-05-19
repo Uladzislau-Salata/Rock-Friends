@@ -2,33 +2,29 @@ import "./Header.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { grey } from "@mui/material/colors";
 
-
-
-
 function Header() {
   let header;
   document.onscroll = function () {
-    if(!header){
-      
+    if (!header) {
       header = document.querySelector(".showing");
     }
     let scroll = window.scrollY;
-   
+
     if (scroll > 0) {
       header.classList.add("header_back");
     } else {
       header.classList.remove("header_back");
     }
   };
-  
-  const openBlock = () => {
-    console.log(header);
 
-    if(!header){
+  const openBlock = () => {
+    
+
+    if (!header) {
       header = document.querySelector(".showing");
     }
-    
-   return header.classList.toggle("open");
+
+    return header.classList.toggle("open");
 
     /*if(openHeader.className.includes('open')){
       return openHeader.classList.remove("open");
@@ -36,7 +32,7 @@ function Header() {
       return openHeader.classList.add("open");
     }
     */
-  }
+  };
 
   return (
     <header id="header">
