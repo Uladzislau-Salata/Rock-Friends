@@ -1,6 +1,6 @@
 .main-container {
   height: 100%;
-  width: 450px;
+  width: 700px;
 
   display: flex;
   align-items: center;
@@ -9,13 +9,24 @@
 .window {
   height: 100%;
   width: 100%;
-  
+  background-color: #ecf0f2;
+  padding: 5px 5px 1px 5px;
+ 
 }
 
 .window img{
   filter: grayscale(0);
+  cursor: default;
 
 }
 .arrow {
   cursor: pointer;
+  color: #ecf0f2;
+}
+
+.arrow-left{
+ 
+
+ height: 100%;
+  
 }
