@@ -7,6 +7,18 @@
   background-color: #d9d8d8;
 }
 
+#kontact .container {
+  width: 1015px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* #kontact .container .addmap {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
 .kontact-title {
   padding-bottom: 32px;
 }
@@ -28,22 +40,23 @@
   list-style: none;
 }
 
-#kontact .adress .haveicon {
+#kontact .addmap .adress .haveicon {
   display: flex;
   align-items: flex-end;
-  column-gap: 3px;
+  column-gap: 10px;
   row-gap: 30px;
 }
 
-#kontact .adress {
+#kontact .addmap .adress {
   float: left;
-  width: 297px;
+  width: 310px;
   height: 370px;
   text-align: left;
   color: #222;
+  font-family: "Roboto", sans-serif;
   border-right: 1px solid #222;
   margin-bottom: 10px;
-  padding-inline-start: 175px;
+  /* padding-inline-start: 105px; */
 }
 
 #kontact .adress h3 {
@@ -53,10 +66,29 @@
   color: #222;
 }
 
-#kontact p {
+#kontact .addmap .adress p {
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  margin-left: 0;
+  font-family: "Roboto", sans-serif;
 }
 #kontact .chart {
   line-height: 2px;
+}
+.clear {
+  clear: both;
+}
+#kontact .map {
+  float: left;
+  width: 650px;
+  height: 350px;
+  margin-left: 50px;
+  border: 1px solid #222;
+}
+
+#kontact .addmap {
+  display: flex;
+  flex: 3 1 650px;
+  flex-basis: 650px;
+  gap: 10px;
 }
