@@ -3,7 +3,7 @@ import { Carousel } from "./carousel/Carousel";
 import { useState } from "react";
 
 function Galeria() {
-  const [indexClickedImg, setIndexClickedImg] = useState(4);
+  const [indexClickedImg, setIndexClickedImg] = useState(-1);
   let carousel;
   let carouselImg;
 
@@ -20,6 +20,7 @@ function Galeria() {
     if (!carousel || !carouselImg) {
       carousel = document.querySelector(".carousel-background");
       carouselImg = document.querySelector(".carousel");
+      
     }
 
     carouselImg.classList.toggle("showCarousel");
@@ -29,6 +30,7 @@ function Galeria() {
   const Pictures = roadToPicture.map(function (name, index) {
     return (
       <div key={index} className="grid-box">
+        
         <img onClick={() => openCarousel(index)} src={name} alt="" />
       </div>
     );
@@ -46,7 +48,7 @@ function Galeria() {
       </div>
       <div className="carousel-background" onClick={openCarousel}></div>
       <div className="carousel">
-        <Carousel roadToImg={roadToPicture} indexImg={indexClickedImg} />
+        <Carousel roadToImg={roadToPicture} indexImg={indexClickedImg} clickClose={openCarousel} />
       </div>
     </section>
   );
