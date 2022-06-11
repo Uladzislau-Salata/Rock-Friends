@@ -112,3 +112,33 @@
     display: block;
   }
 }
+
+.facebook-rockFriends {
+  display: flex;
+  position: fixed;
+  right: -185px;
+  top: 190px;
+  z-index: 2;
+  width: 235px;
+  height: 500px;
+}
+
+.facebook-rockFriends:hover {
+  animation-name: fb-move-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.facebook-rockFriends .fb-page {
+  border: solid #0170cf 3px;
+}
+@keyframes fb-move-left {
+  0% {
+    right: -185px;
+  }
+  100% {
+    right: 0px;
+  
+
+  }
+}

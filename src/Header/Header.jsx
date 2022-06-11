@@ -1,6 +1,7 @@
 import "./Header.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { grey } from "@mui/material/colors";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 function Header() {
   let header;
@@ -18,8 +19,6 @@ function Header() {
   };
 
   const openBlock = () => {
-    
-
     if (!header) {
       header = document.querySelector(".showing");
     }
@@ -32,6 +31,16 @@ function Header() {
       return openHeader.classList.add("open");
     }
     */
+    /* <iframe
+          src="https://www.facebook.com/plugins/group.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fayearofrunning%2F&width=280&show_metadata=false&height=239&appId"
+          width="280"
+          height="239"
+          style="border:none;overflow:hidden"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>*/
   };
 
   return (
@@ -86,6 +95,32 @@ function Header() {
             Широкий выбор алкоголя и коктейлей, легкие закуски и много хорошей
             музыки.
           </p>
+        </div>
+      </div>
+      <div className="facebook-rockFriends">
+        <div>
+          <FacebookIcon  sx={{ fontSize: 50 }} 
+          color="primary"/>
+        </div>
+        <div
+          className="fb-page"
+          data-href="https://www.facebook.com/rock.friends.warszawa/"
+          data-tabs="timeline, events, messages"
+          data-width="340"
+          data-height="500"
+          data-small-header="false"
+          data-adapt-container-width="true"
+          data-hide-cover="false"
+          data-show-facepile="true"
+        >
+          <blockquote
+            cite="https://www.facebook.com/rock.friends.warszawa/"
+            className="fb-xfbml-parse-ignore"
+          >
+            <a href="https://www.facebook.com/rock.friends.warszawa/">
+              Rock Friends
+            </a>
+          </blockquote>
         </div>
       </div>
     </header>
