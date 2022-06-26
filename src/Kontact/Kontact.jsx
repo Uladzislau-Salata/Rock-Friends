@@ -42,7 +42,8 @@ function Kontact() {
               </li>
               <li>
                 <p className="haveicon">
-                  <LocationOnIcon></LocationOnIcon><>ул. Слиска 3 (въезд с Сосновы)</>
+                  <LocationOnIcon></LocationOnIcon>
+                  <>ул. Слиска 3 (въезд с Сосновы)</>
                 </p>
               </li>
               <li>
@@ -52,24 +53,30 @@ function Kontact() {
               </li>
               <li>
                 <p className="haveicon">
-                  <MarkunreadIcon></MarkunreadIcon>Послать сообщение
+                  <MarkunreadIcon></MarkunreadIcon>
+                  <a href="mailto:rockfriends.warszawa@gmail.com">
+                    Послать сообщение
+                  </a>
                 </p>
               </li>
               <li>
                 <p className="haveicon">
-                  <LocalPhoneIcon></LocalPhoneIcon>22 370 22 86
+                  <LocalPhoneIcon></LocalPhoneIcon>
+                  <a href="tel:223702286">22 370 22 86</a>
                 </p>
               </li>
               <li>
                 <p className="haveicon">
                   <PhoneAndroidIcon></PhoneAndroidIcon>
-                  <b>Аня</b>515 967 123
+                  <b>Аня</b>
+                  <a href="tel:515967123">515 967 123</a>
                 </p>
               </li>
               <li>
                 <p className="haveicon">
                   <PhoneAndroidIcon></PhoneAndroidIcon>
-                  <b>Конрад</b> 514 900 777
+                  <b>Конрад</b>
+                  <a href="tel:514900777">514 900 777</a>
                 </p>
               </li>
               <br />
