@@ -1,0 +1,11 @@
+/* .mapContainer {
+  max-width: 100%;
+  border: 10px solid yellow;
+  width: 450;
+  height: "350px";
+} */
+
+.containerStyle {
+  width: "650px";
+  height: "350px";
+}
