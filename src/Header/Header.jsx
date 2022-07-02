@@ -2,9 +2,50 @@ import "./Header.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { grey } from "@mui/material/colors";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { useState } from "react";
+
+
 
 function Header() {
   let header;
+  
+  
+  const [isScriptLoaded, setisScriptLoaded] = useState(false);
+  //Подключение facebook SDK
+ const url1 = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0&appId=5238127952917299&autoLogAppEvents=1';
+     
+ async function fetchAsync() {
+
+  const sdkJs = document.createElement("script");
+
+  sdkJs.src = url1;
+  sdkJs.async = true;
+  sdkJs.defer = true;
+  sdkJs.crossorigin = "anonymous";
+  sdkJs.nonce = "bZt35TIA";
+  sdkJs.onload = () => { 
+    setisScriptLoaded(true)
+  };
+  document.head.appendChild(sdkJs);
+
+
+  // const response = await import(url1);
+  // console.log(response);
+ 
+  /*return new Promise(resolve => {(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));    
+});*/
+ }
+ if(isScriptLoaded !== true){
+ fetchAsync();
+ }
+  //---------------------------
+
   document.onscroll = function () {
     if (!header) {
       header = document.querySelector(".showing");
@@ -25,23 +66,19 @@ function Header() {
 
     return header.classList.toggle("open");
 
-    /*if(openHeader.className.includes('open')){
-      return openHeader.classList.remove("open");
-    }else{
-      return openHeader.classList.add("open");
-    }
-    */
-    /* <iframe
-          src="https://www.facebook.com/plugins/group.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2Fayearofrunning%2F&width=280&show_metadata=false&height=239&appId"
-          width="280"
-          height="239"
-          style="border:none;overflow:hidden"
-          scrolling="no"
-          frameborder="0"
-          allowfullscreen="true"
-          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-        ></iframe>*/
+    /* 
+   подключение facebook sdk
+   <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0&appId=5238127952917299&autoLogAppEvents=1"
+      nonce="bZt35TIA"
+    ></script>*/
+
+   
   };
+
 
   return (
     <header id="header">
@@ -97,16 +134,15 @@ function Header() {
           </p>
         </div>
       </div>
-      <div className="facebook-rockFriends">
-        <div>
-          <FacebookIcon  sx={{ fontSize: 50 }} 
-          color="primary"/>
-        </div>
+      {isScriptLoaded ? 
+      <div className="facebook-rockFriends" >
+        <FacebookIcon sx={{ fontSize: 50 }} color="primary" />
+
         <div
           className="fb-page"
           data-href="https://www.facebook.com/rock.friends.warszawa/"
           data-tabs="timeline, events, messages"
-          data-width="340"
+          data-width="350"
           data-height="500"
           data-small-header="false"
           data-adapt-container-width="true"
@@ -122,7 +158,10 @@ function Header() {
             </a>
           </blockquote>
         </div>
-      </div>
+      </div> 
+      : <h2>Loading</h2>}
+
+      
     </header>
   );
 }

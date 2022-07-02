@@ -116,29 +116,49 @@
 .facebook-rockFriends {
   display: flex;
   position: fixed;
-  right: -185px;
+  right: 0px;
   top: 190px;
   z-index: 2;
-  width: 235px;
+  width: 400px;
   height: 500px;
+  min-width: 400px;
+
+  box-sizing: border-box; /*размер блока по бордеру*/
+  overflow: hidden;
+
+  /*animation-name: fb-move-left;
+  animation-duration: 1s;
+  animation-direction: reverse;*/
+  transition: transform 1s ease;
+  transform: translate3d(350px, 0, 0);
 }
 
 .facebook-rockFriends:hover {
-  animation-name: fb-move-left;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
+  /*animation-name: fb-move-left;*/
+  /*animation-name: fb-move-left;
+  animation-direction: normal;
+  animation-fill-mode: forwards;*/
+  transform: translate3d(0, 0, 0);
 }
 
 .facebook-rockFriends .fb-page {
-  border: solid #0170cf 3px;
+  border: 3px solid #0170cf;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+
+  flex: 1;
 }
-@keyframes fb-move-left {
+
+.fb-page * {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/*@keyframes fb-move-left {
   0% {
-    right: -185px;
+    right: -350px;
   }
   100% {
     right: 0px;
-  
-
   }
-}
+}*/
